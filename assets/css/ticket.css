@@ -517,3 +517,9 @@ select.form-control, input{
 .footer-view.active{
     display: block;
 }
+
+@media (max-width: 600px) {
+  .main-container {
+    padding-bottom: 120px;
+  }
+}
