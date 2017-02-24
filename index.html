@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Boletos</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
@@ -90,7 +92,7 @@
                                                 <li><small>7:00PM</small></li>
                                             </ul>
                                         </div><div 
-                                        class="right-inner-content">
+                                        class="right-inner-content" data-toggle="modal" data-target="#buyModal">
                                             <img src="assets/images/buy.png">
                                         </div>
                                         <div class="last-bottom-footer">
@@ -106,16 +108,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-
 
 
         <div class="footer">
@@ -138,6 +130,264 @@
 
 
 
+
+
+
+
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="buyModal">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content ">
+          <!-- <div class="modal-header">
+            
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div> -->
+          <div class="modal-body">
+            <div class="modal-progress-bar">
+                <div class="circle circle1 active" value="1">
+                    <div class="inner-circle">1</div>
+                </div>
+                <div class="circle circle2" value="2">
+                    <div class="inner-circle">2</div>
+                </div>
+                <div class="circle circle3" value="3">
+                    <div class="inner-circle">3</div>
+                </div>
+                <div class="line">
+                    <div class="inner-line line1"></div><div class="inner-line line2"></div>
+                </div>
+                <div class="label circle1 active">Boletos</div>
+                <div class="label circle2">Forma de pago</div>
+                <div class="label circle3">!Gracias!</div>
+            </div>
+
+            <div class="main-ticket-buy-content view1 active">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tipos De Boletos</th>
+                            <th>Precio</th>
+                            <th>Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td valign="top" class="main-details">
+                                <div class="buy-details">
+                                    <div class="left-inner-content">
+                                        <h3>Arena</h3>
+                                        <p><small>Jornada de Inclusión</small></p>
+                                        <h6>Día Internacional del Síndrome de Asperger</h6>
+                                        <ul>
+                                            <li><i class="fa fa-calendar"></i>Cuando</li>
+
+                                            <li><span>DE:</span>17 DE MAR 2017</li>
+                                            <li><small>11:00AM</small></li>
+
+                                            <li><span>AL:</span>19 DE MAR 2017</li>
+                                            <li><small>7:00PM</small></li>
+                                            <li class="nopad pad-top">WORLD TRADE CENTER CIUDAD DE MÉXICO - SALÓN HUICHOL</li>
+                                            <li class="nopad"><small class="lighter">Filadelfia, Nápoles, Ciudad de México, CDMX, México</small></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td valign="top" class="price">$500MXN</td>
+                            <td valign="top" class="quantity">
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="buy-details">
+                                    <div class="left-inner-content">
+                                        <h3>Arena</h3>
+                                        <p><small>Jornada de Inclusión</small></p>
+                                        <h6>Día Internacional del Síndrome de Asperger</h6>
+                                        <ul>
+                                            <li><i class="fa fa-calendar"></i>Cuando</li>
+
+                                            <li><span>DE:</span>17 DE MAR 2017</li>
+                                            <li><small>11:00AM</small></li>
+
+                                            <li><span>AL:</span>19 DE MAR 2017</li>
+                                            <li><small>7:00PM</small></li>
+                                            <li class="nopad pad-top">WORLD TRADE CENTER CIUDAD DE MÉXICO - SALÓN HUICHOL</li>
+                                            <li class="nopad"><small class="lighter">Filadelfia, Nápoles, Ciudad de México, CDMX, México</small></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>$500MXN</td>
+                            <td>
+                                <select class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="main-ticket-buy-content view2">
+                <div class="input-box-group">
+                    <h4 class="heading-with-border">Método de pago</h4>
+                    <div class="input-box">
+                        <select class="form-control">
+                            <option value="" disabled selected>Tarjeta de crédito o débito</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-box-group">
+                    <h4 class="heading-with-border">Tarjeto crédito/débito</h4>
+                    <div class="input-box">
+                        <label>Nombre Tarjetahabiente</label>
+                        <input class="form-control" type="text" name="">
+                    </div><div 
+                    class="input-box">
+                        <label>Teléfono</label>
+                        <input class="form-control" type="text" name="">
+                    </div>
+                    <div class="input-box">
+                        <label>Calle y número</label>
+                        <input class="form-control" type="text" name="">
+                    </div><div 
+                    class="input-box">
+                        <label>Código postal</label>
+                        <input class="form-control" type="text" name="">
+                    </div>
+                    <div class="input-box">
+                        <label>Número de tarjeta</label>
+                        <input class="form-control" type="text" name="">
+                    </div><div 
+                    class="group input-box">
+                        <div class="input-box" >
+                            <label>Fecha de vencimiento</label>
+                            <input class="form-control" type="text" name="" style="display:inline-block; width:48%; margin-right: 1%; vertical-align: top:"><input class="form-control" type="text" name="" style="display:inline-block; width:48%; margin-left: 1%; vertical-align: top:">
+                        </div><div 
+                        class="input-box" style="padding-right: 0px;">
+                            <label>Cógido de seguridad</label>
+                            <input class="form-control" type="text" name="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-box-group">
+                    <h4 class="heading-with-border">Datos del dueño de la reservación</h4>
+                    <div class="input-box">
+                        <label>Nombre (s)</label>
+                        <input class="form-control" type="text" name="">
+                    </div><div 
+                    class="input-box">
+                        <label>Apellidos (s)</label>
+                        <input class="form-control" type="text" name="">
+                    </div><div 
+                    class="input-box">
+                        <label>Email</label>
+                        <input class="form-control" type="text" name="">
+                    </div><div 
+                    class="input-box">
+                        <label>Confirma email</label>
+                        <input class="form-control" type="text" name="">
+                    </div>
+                </div>
+            </div>
+            <div class="main-ticket-buy-content view3">
+                <div class="input-box-group">
+                    <h4 class="heading-with-border">Gracias!</h4>
+                </div>
+                <div class="buy-details" style="border-bottom:1px dashed #bfbebe; padding-top: 20px; padding-bottom:50px;">
+                    <div class="left-inner-content">
+                        <p><small>Jornada de Inclusión</small></p>
+                        <h6>Día Internacional del Síndrome de Asperger</h6>
+                        <ul>
+                            <li><i class="fa fa-calendar"></i>Cuando</li>
+
+                            <li><span>DE:</span>17 DE MAR 2017</li>
+                            <li><small>11:00AM</small></li>
+
+                            <li><span>AL:</span>19 DE MAR 2017</li>
+                            <li><small>7:00PM</small></li>
+                            <li class="nopad pad-top">WORLD TRADE CENTER CIUDAD DE MÉXICO - SALÓN HUICHOL</li>
+                            <li class="nopad"><small class="lighter">Filadelfia, Nápoles, Ciudad de México, CDMX, México</small></li>
+                        </ul>
+                    </div>
+                    <div class="right-inner-content">
+                        <img src="assets/images/letter.png">
+                    </div>
+                </div>
+                <p style="text-align:center; font-size: 12px; padding-top:5px;">Una copia de los boletos ha sido enviada a tu correo electrónico</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="footer-view view1 active">
+                <button class="btn btn-danger left" data-dismiss="modal">Regreso</button>
+                <button type="button" class="btn btn-primary page2">Siguiente</button>
+            </div>
+            <div class="footer-view view2">
+                <button class="btn btn-danger left" data-dismiss="modal">Regreso</button>
+                <button type="button" class="btn btn-primary page3">Comprar</button>
+            </div>
+            <div class="footer-view view3" style="text-align: center;">
+                <button class="btn btn-primary">Salir</button>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.circle').click(function(){
+            var self = $(this);
+            var id = self.attr('value');
+            $('.inner-line').removeClass('active');
+            $('.circle').removeClass('active');
+            if(id == 1){
+                $('.circle1').addClass('active');
+            }
+            if(id == 2){
+                $('.circle1').addClass('active');
+                $('.circle2').addClass('active');
+                $('.line1').addClass('active');
+            }
+            if(id == 3){
+                $('.circle1').addClass('active');
+                $('.circle2').addClass('active');
+                $('.circle3').addClass('active');
+                $('.line1').addClass('active');
+                $('.line2').addClass('active');
+            }
+            $('.main-ticket-buy-content').removeClass('active');
+            $('.footer-view').removeClass('active');
+            $('.view'+id).addClass('active');
+    
+        })
+
+        $('.page2').click(function(){
+            $('.circle2').click();
+        })
+
+        $('.page3').click(function(){
+            $('.circle3').click();
+        })
+    </script>
 </body>
 </html>

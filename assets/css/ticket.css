@@ -12,20 +12,8 @@ body{
     min-height: 600px;
     width:100%;
     display: inline-block;
-    background-image: url('assets/images/ticket.png');
 }
 
-.circle{
-    width:100px;
-    height:100px;
-    background-color: #f2f2f2;
-    border-radius: 100%;
-    position:absolute;
-    left:0;
-    top:0;
-    margin-left: -50px;
-    margin-top: -50px;
-}
 
 .inside-content{
     display: inline-block;
@@ -258,4 +246,274 @@ img{
 
 .last-bottom-footer p{
     font-size: 1.3vw;
+}
+
+.modal-progress-bar{
+    position:relative;
+    padding:40px;
+    display: block;
+    width:100%;
+}
+
+.modal-progress-bar .line{
+    width:98%;
+    height:20px;
+    position:absolute;
+    right:0px;
+    left:0px;
+    margin:auto;
+    top:15px;
+}
+
+.modal-progress-bar .line .inner-line{
+    height:20px;
+    background-color: #eae8e8;
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.modal-progress-bar .line .inner-line.active{
+    background-color: #00a09e;
+}
+
+.modal-progress-bar .circle{
+    width:50px;
+    height:50px;
+    border-radius: 100%;
+    border:3px solid #eae8e8;
+    padding:5px;
+    position:absolute;
+    background-color: white;
+    z-index: 1000;
+    top:0px;
+}
+
+.modal-progress-bar .circle.active{
+    border-color: #00a09e;
+}
+
+.modal-progress-bar .circle.active .inner-circle{
+    background-color: #00a09e;
+}
+
+.modal-progress-bar .label{
+    width:50px;
+    padding:5px;
+    position:absolute;
+    z-index: 1000;
+    top:51px;
+    color: #c6c6c6;
+}
+
+.modal-progress-bar .label.active{
+    color:#353535;
+}
+
+.circle1{
+    left:0px;
+}
+
+.circle2{
+    left:50%;
+    margin-left: -25px;
+}
+
+.label.circle2{
+    margin-left: -42px;
+}
+
+.circle3{
+    right:0px;
+}
+
+.modal-progress-bar .inner-circle{
+    width:100%;
+    height:100%;
+    background-color: #eae8e8;
+    display: block;
+    border-radius: 100%;
+    font-size: 18px;
+    color: white;
+    padding-left: 11px;
+    padding-top: 4px;
+}
+
+.buy-details .left-inner-content h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.buy-details .left-inner-content{
+    width:100%;
+}
+
+.buy-details .left-inner-content p{
+    font-size: 12px;
+}
+
+.buy-details .left-inner-content h6{
+    font-size: 18px;
+}
+
+.buy-details .left-inner-content ul {
+    font-size: 14px;
+}
+
+.buy-details .left-inner-content ul li small{
+    font-size: 9px;
+}
+
+.buy-details .left-inner-content ul li small.lighter{
+    font-weight:300;
+}
+
+.buy-details .left-inner-content ul li.nopad{
+    padding-left:0px; 
+}
+
+.buy-details .left-inner-content ul li.pad-top{
+    padding-top: 5px;
+}
+
+.main-ticket-buy-content{
+    display: none;
+}
+
+.main-ticket-buy-content.active{
+    display:block;
+}
+
+.main-ticket-buy-content table{
+    width:100%;
+} 
+
+.main-ticket-buy-content thead tr{
+    border-bottom: 2px solid black;
+} 
+
+.main-ticket-buy-content tbody tr{
+    border-bottom: 1px dashed #bfbebe;
+} 
+
+.main-ticket-buy-content tbody tr:last-child{
+    border-bottom: none;
+}
+
+.main-ticket-buy-content thead tr th{
+    padding-bottom: 9px;
+    font-size: 16px;
+} 
+
+.main-ticket-buy-content tbody td{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-ticket-buy-content tbody td.main-details{
+    width:65%;
+    padding-right: 20px;
+}
+
+.main-ticket-buy-content tbody td.price{
+    width:20%;
+    padding-right: 20px;
+}
+
+.main-ticket-buy-content tbody td.quantity{
+    width:15%;
+}
+
+
+#buyModal .modal-body, #buyModal .modal-footer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+button.btn-primary{
+    background-color: #00a09e;
+    border-color: #00a09e;
+}
+
+button.btn-primary:hover, button.btn-primary:focus{
+    background-color: #036867;
+    border-color: #036867;
+}
+
+button.btn-danger{
+    background-color: #e23d52;
+}
+
+button.left{
+    float:left;
+}
+
+.input-box-group h4{
+    font-size: 20px;
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+
+.input-box-group .input-box{
+    width:50%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+
+.input-box-group label{
+    margin-bottom:0px;
+    font-weight: 400;
+}
+
+
+.input-box-group .input-box:nth-child(even){
+    padding-right: 10px;
+}
+
+.input-box-group .input-box:nth-child(odd){
+    padding-left: 10px;
+}
+
+.input-box-group .group.input-box:nth-child(even){
+    padding-left: 10px;
+    padding-right: 0px;
+}
+
+.input-box-group .group.input-box .input-box:nth-child(odd){
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+select.form-control, input{
+    border:1px solid #c6c6c6 !important;
+    border-radius: 11px !important;
+}
+
+.main-ticket-buy-content.view3 .buy-details .left-inner-content{
+    width:48%;
+    margin-right: 1%;
+}
+
+.main-ticket-buy-content.view3 .buy-details .right-inner-content{
+    width:48%;
+    margin-left: 1%;
+    display: inline-block;
+    vertical-align: top;
+    padding:0px 50px;
+}
+
+.main-ticket-buy-content.view3 .buy-details .right-inner-content img{
+    width:100%;
+}
+
+.footer-view{
+    display: none;
+}
+
+.footer-view.active{
+    display: block;
 }
