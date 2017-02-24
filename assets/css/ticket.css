@@ -18,11 +18,11 @@ body{
 .inside-content{
     display: inline-block;
     position:absolute;
-    margin:9.1% 6.889%;
+    /*margin:9.1% 6.889%;*/
+
     left:0;
     top:0;
-    width:86.2vw;
-    height:125.6vw;
+    margin-left:7%;
 }
 
 .inside-content h4{
@@ -522,4 +522,8 @@ select.form-control, input{
   .main-container {
     padding-bottom: 120px;
   }
+}
+
+.padded.upper-content{
+    margin-top:7vw;
 }

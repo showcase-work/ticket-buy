@@ -43,7 +43,7 @@
 
         <div class="main-container">
             <div class="ticket-container">
-                <img src="assets/images/ticket.png" style="max-width:100%;">
+                <img src="assets/images/ticket.png" style="max-width:100%;" id="mainImage">
                 <div class="inside-content">
                     <div class="inside-inside-content">
                         <div class="padded upper-content">
@@ -51,7 +51,7 @@
                             <h2>Día Internacional del Síndrome de Asperger</h2>
                         </div>
                         <div class="banner">
-                            <img src="assets/images/banner.jpg" style="width:100%;">
+                            <img src="assets/images/banner.jpg" style="width:100%;"">
                         </div>
                         <div class="padded location-info">
                             <div class="map">
@@ -387,6 +387,21 @@
 
         $('.page3').click(function(){
             $('.circle3').click();
+        })
+
+
+        var img = document.getElementById('mainImage'); 
+        //or however you get a handle to the IMG
+        var width = img.clientWidth;
+        var height = img.clientHeight;
+      
+        $(".inside-content").width(85.99/100*width+"px");
+        $(".inside-content").height(88.5/100*height+"px");
+        $(window).resize(function(){
+            var width = img.clientWidth;
+            var height = img.clientHeight;
+            $(".inside-content").width(85.99/100*width+"px");
+            $(".inside-content").height(88.5/100*height+"px");
         })
     </script>
 </body>
