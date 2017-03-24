@@ -144,6 +144,7 @@ body{
 .inside-inside-content{
     height:inherit;
     position: relative;
+    display: none;
 }
 
 .footer-relative{
@@ -154,7 +155,7 @@ body{
     position:absolute;
     top:0px;
     left:0px;
-    padding:2vw 3.8vw;
+    padding:2.5vw 3.8vw;
 }
 
 img{
@@ -165,7 +166,7 @@ img{
     display: inline-block;
     vertical-align: top;
     width:24%;
-    padding:2%;
+    padding-right: 2%;
     border-right: 2px solid #211915;
 }
 
@@ -178,7 +179,7 @@ img{
 }
 
 .left-inner-content{
-    width:52%;
+    width:55%;
     display: inline-block;
     vertical-align: top;
     margin-top: -0.6vw;  
@@ -187,7 +188,7 @@ img{
 }
 
 .right-inner-content{
-    width:43%;
+    width:40%;
     display: inline-block;
     vertical-align: top; 
 }
@@ -242,10 +243,12 @@ img{
     font-weight: bolder;
     font-size: 1.6vw;
     margin-bottom: 0.5vw;
+    margin-top: 1vw;
 }
 
 .last-bottom-footer p{
     font-size: 1.3vw;
+    margin-bottom: 0px;
 }
 
 .modal-progress-bar{
@@ -526,4 +529,29 @@ select.form-control, input{
 
 .padded.upper-content{
     margin-top:7vw;
+}
+
+.location-info{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex; 
+}
+
+.customh4{
+    margin-top: 6vw;
+}
+
+.footer-content{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex; 
+    align-items: center;
+}
+
+.buyticket{
+    cursor: pointer;
 }

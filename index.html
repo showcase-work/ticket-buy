@@ -47,7 +47,7 @@
                 <div class="inside-content">
                     <div class="inside-inside-content">
                         <div class="padded upper-content">
-                            <h4>Jornada de Inclusión</h4>
+                            <h4 class="customh4">Jornada de Inclusión</h4>
                             <h2>Día Internacional del Síndrome de Asperger</h2>
                         </div>
                         <div class="banner">
@@ -92,7 +92,7 @@
                                                 <li><small>7:00PM</small></li>
                                             </ul>
                                         </div><div 
-                                        class="right-inner-content" data-toggle="modal" data-target="#buyModal">
+                                        class="right-inner-content buyticket" data-toggle="modal" data-target="#buyModal">
                                             <img src="assets/images/buy.png">
                                         </div>
                                         <div class="last-bottom-footer">
@@ -390,18 +390,24 @@
         })
 
 
-        var img = document.getElementById('mainImage'); 
-        //or however you get a handle to the IMG
-        var width = img.clientWidth;
-        var height = img.clientHeight;
-      
-        $(".inside-content").width(86.1/100*width+"px");
-        $(".inside-content").height(88.8/100*height+"px");
-        $(window).resize(function(){
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var img = document.getElementById('mainImage'); 
+            //or however you get a handle to the IMG
             var width = img.clientWidth;
             var height = img.clientHeight;
+            
             $(".inside-content").width(86.1/100*width+"px");
             $(".inside-content").height(88.8/100*height+"px");
+            $(window).resize(function(){
+                var width = img.clientWidth;
+                var height = img.clientHeight;
+                $(".inside-content").width(86.1/100*width+"px");
+                $(".inside-content").height(88.8/100*height+"px");
+            })
+
+            $(".inside-inside-content").fadeIn();
         })
     </script>
 </body>
