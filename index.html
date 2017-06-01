@@ -354,6 +354,29 @@
       crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+    <script type="text/javascript">
+        $(".ticket-container").imagesLoaded(function(){
+            var img = document.getElementById('mainImage'); 
+            //or however you get a handle to the IMG
+            var width = img.clientWidth;
+            var height = img.clientHeight;
+            
+            $(".inside-content").width(86.1/100*width+"px");
+            $(".inside-content").height(88.8/100*height+"px");
+            $(window).resize(function(){
+                var width = img.clientWidth;
+                var height = img.clientHeight;
+                $(".inside-content").width(86.1/100*width+"px");
+                $(".inside-content").height(88.8/100*height+"px");
+            })
+            $(".inside-inside-content").fadeIn();
+        });
+
+            
+    </script>
+
     <script type="text/javascript">
         $('.circle').click(function(){
             var self = $(this);
@@ -390,25 +413,6 @@
         })
 
 
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            var img = document.getElementById('mainImage'); 
-            //or however you get a handle to the IMG
-            var width = img.clientWidth;
-            var height = img.clientHeight;
-            
-            $(".inside-content").width(86.1/100*width+"px");
-            $(".inside-content").height(88.8/100*height+"px");
-            $(window).resize(function(){
-                var width = img.clientWidth;
-                var height = img.clientHeight;
-                $(".inside-content").width(86.1/100*width+"px");
-                $(".inside-content").height(88.8/100*height+"px");
-            })
-
-            $(".inside-inside-content").fadeIn();
-        })
     </script>
 </body>
 </html>
